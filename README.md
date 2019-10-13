@@ -1,2 +1,1 @@
-# World-University-Rankings-Table
-Scrapping the World University Rankings table using python
+# Scrap World University Rankings with Python
