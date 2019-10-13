@@ -32,7 +32,7 @@ Using the small inspection cursor you can point at elements of the page and find
 
 A standard method of using python to request internet pages is through the requests library, however in our particular case this approach will not work, because the website uses AJAX to modify the HTML of the page. This means that the HTML code which you will receive by using requests will only contain an empty template of the table and not the information we are trying to collect. To give the JS code a chance to run and populate the table with the information, we use selenium. Selenium uses browsers to request webpages and then collect the HTML after the page is fully loaded, which will allow us to collect the information we need.
 
-'''
+```
 # import standard libraries
 import json
 import time
@@ -44,4 +44,4 @@ import pandas as pd
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen 
 from selenium import webdriver
-'''
+```
