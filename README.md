@@ -45,3 +45,21 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen 
 from selenium import webdriver
 ```
+
+Selenium requires a webdriver to access the web browser. It can be installed or used from an executable file directly. In this example we will use the executable file directly, please edit the following code by adding the location of the webdriver. It is recommonded to place it with the code itself.
+
+```
+webdriver_location = '***please insert here webdriver location *** /chromedriver.exe'
+
+webdriver_location = 'C:/Users/razek/Desktop/git_pages/World-University-Rankings-Table/chromedriver.exe'
+# initiate webdriver
+driver = webdriver.Chrome(executable_path = webdriver_location)
+```
+
+Defining which web address we are going to use for scrapping is essential for the workflow. A quick inspection of the target web address reveals that changing the length parameter from 25 to -1 will result in collecting all the available universities instead of 25 per page. This should enable us to collect the information we need in one go rather than requesting several web pages. 
+Also checking the tabs available on the web page (ranking, scores) reveals more data to be collected. Therefore we will use two web adresses to collect the data, as follows: 
+
+```
+url_stats = 'https://www.timeshighereducation.com/world-university-rankings/2020/world-ranking#!/page/0/length/-1/sort_by/rank/sort_order/asc/cols/stats'
+url_scores = 'https://www.timeshighereducation.com/world-university-rankings/2020/world-ranking#!/page/0/length/-1/sort_by/rank/sort_order/asc/cols/scores'
+```
