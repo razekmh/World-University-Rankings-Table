@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/razekmh/World-University-Rankings-Table/HEAD)
+
 ## Aim
 This code tries to extract information from a university ranking website. The concept of collecting data from websites is called web scraping and is used mainly to collect data from websites which do not offer an API to collect data natively. 
 Several tutorials are available to explain the web scraping basics. This notebook is more of a case study. <br />
