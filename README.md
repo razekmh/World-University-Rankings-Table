@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/razekmh/World-University-Rankings-Table/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Frazekmh%2FWorld-University-Rankings-Table%2Fblob%2Fmaster%2Fweb_scrape_uni.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/razekmh/World-University-Rankings-Table/HEAD)
 
 ## Aim
 This code tries to extract information from a university ranking website. The concept of collecting data from websites is called web scraping and is used mainly to collect data from websites which do not offer an API to collect data natively. 
